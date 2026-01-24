@@ -1,0 +1,122 @@
+.container {
+    min-height: 100vh;
+    padding: calc(80px + var(--spacing-lg)) var(--spacing-md) var(--spacing-xl);
+    background: var(--color-off-white);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-black);
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: var(--color-charcoal);
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.filterBtn {
+    padding: 0.75rem 1.5rem;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    color: var(--color-charcoal);
+    font-family: var(--font-display);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.filterBtn:hover {
+    border-color: var(--color-lime);
+    background: var(--color-lime);
+    color: var(--color-black);
+}
+
+.filterBtn.active {
+    background: var(--color-lime);
+    border-color: var(--color-lime);
+    color: var(--color-black);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.item {
+    position: relative;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    background: var(--color-white);
+    cursor: pointer;
+    border: 1px solid var(--color-border);
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    padding: var(--spacing-lg) var(--spacing-md);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    color: var(--color-white);
+}
+
+.item:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-white);
+}
+
+.overlay p {
+    color: var(--color-lime);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
