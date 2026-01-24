@@ -21,11 +21,12 @@ export function Navigation() {
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
           <img src={logo} alt="Riccardo Carpentry" className={styles.logoImage} />
+          <span className={styles.companyName}>Riccardo Carpentry</span>
         </Link>
-        
+
         <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
           <NavLink to="/" className={({ isActive }) => isActive ? styles.active : ''} onClick={() => setIsOpen(false)}>Home</NavLink>
-          
+
           <div className={styles.dropdown}>
             <span className={styles.dropdownTrigger}>Products <ChevronDown size={14} /></span>
             <div className={styles.dropdownContent}>
@@ -43,7 +44,7 @@ export function Navigation() {
           <NavLink to="/gallery" className={({ isActive }) => isActive ? styles.active : ''} onClick={() => setIsOpen(false)}>Gallery</NavLink>
           <NavLink to="/about" className={({ isActive }) => isActive ? styles.active : ''} onClick={() => setIsOpen(false)}>About Us</NavLink>
           <NavLink to="/contact" className={({ isActive }) => isActive ? styles.active : ''} onClick={() => setIsOpen(false)}>Contact Us</NavLink>
-          
+
           <a href="tel:0118146808" className={styles.ctaMobile}><Phone size={16} /> Call Now</a>
         </nav>
 

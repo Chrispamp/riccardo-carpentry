@@ -29,6 +29,7 @@
 .logo {
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
 .logoImage {
@@ -40,6 +41,19 @@
 
 .header.scrolled .logoImage {
     height: 60px;
+}
+
+.companyName {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-black);
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+
+.header.scrolled .companyName {
+    font-size: 1.3rem;
 }
 
 .nav {
