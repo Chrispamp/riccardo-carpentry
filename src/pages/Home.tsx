@@ -1,8 +1,9 @@
 import { Hero } from '../components/Hero';
+import { CTA } from '../components/CTA';
 import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
 import { ArrowRight, Users, Globe, Hammer, Sparkles } from 'lucide-react';
-import heroImage from '../assets/images/Home Hero Image.jpg';
+import heroImage from '../assets/images/Home Hero Image.webp';
 
 export function Home() {
     return (
@@ -134,13 +135,7 @@ export function Home() {
                 </div>
             </section>
 
-            <section className={styles.cta}>
-                <div className={styles.ctaContent}>
-                    <h2>Ready to Start Your Project?</h2>
-                    <p>Contact us today for a free consultation and custom quotation.</p>
-                    <Link to="/contact" className={styles.button}>Request a Quote</Link>
-                </div>
-            </section>
+            <CTA />
         </div>
     );
 }

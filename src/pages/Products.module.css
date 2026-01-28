@@ -1,0 +1,5 @@
+.container {
+    padding: var(--spacing-xl);
+    text-align: center;
+    min-height: 50vh;
+}

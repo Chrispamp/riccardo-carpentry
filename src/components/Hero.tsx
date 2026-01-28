@@ -47,13 +47,7 @@ export function Hero({ image, title, subtitle }: HeroProps) {
                 )}
             </div>
 
-            <motion.div
-                className={styles.scrollIndicator}
-                animate={{ y: [0, 10, 0] }}
-                transition={{ repeat: Infinity, duration: 2 }}
-            >
-                Scroll
-            </motion.div>
+
         </div>
     );
 }

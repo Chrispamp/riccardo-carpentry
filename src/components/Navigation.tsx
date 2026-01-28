@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import styles from './Navigation.module.css';
-import { Menu, X, ChevronDown, Phone } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import logo from '../assets/images/logo_edited.png';
 
 export function Navigation() {
@@ -28,7 +28,9 @@ export function Navigation() {
           <NavLink to="/" className={({ isActive }) => isActive ? styles.active : ''} onClick={() => setIsOpen(false)}>Home</NavLink>
 
           <div className={styles.dropdown}>
-            <span className={styles.dropdownTrigger}>Products <ChevronDown size={14} /></span>
+            <NavLink to="/products" className={({ isActive }) => `${styles.dropdownTrigger} ${isActive ? styles.active : ''}`} onClick={() => setIsOpen(false)}>
+              Products <ChevronDown size={14} />
+            </NavLink>
             <div className={styles.dropdownContent}>
               <Link to="/products/doors" onClick={() => setIsOpen(false)}>Doors</Link>
               <Link to="/products/windows" onClick={() => setIsOpen(false)}>Windows</Link>
@@ -44,8 +46,6 @@ export function Navigation() {
           <NavLink to="/gallery" className={({ isActive }) => isActive ? styles.active : ''} onClick={() => setIsOpen(false)}>Gallery</NavLink>
           <NavLink to="/about" className={({ isActive }) => isActive ? styles.active : ''} onClick={() => setIsOpen(false)}>About Us</NavLink>
           <NavLink to="/contact" className={({ isActive }) => isActive ? styles.active : ''} onClick={() => setIsOpen(false)}>Contact Us</NavLink>
-
-          <a href="tel:0118146808" className={styles.ctaMobile}><Phone size={16} /> Call Now</a>
         </nav>
 
         <button className={styles.menuToggle} onClick={() => setIsOpen(!isOpen)}>

@@ -1,16 +1,17 @@
 import { useParams } from 'react-router-dom';
 import { Hero } from '../components/Hero';
 import { Link } from 'react-router-dom';
+import { CTA } from '../components/CTA';
 import styles from './ProductList.module.css';
 
-import doorsImage from '../assets/images/Doors Hero Image.jpg';
-import windowsImage from '../assets/images/Windows Hero Image.jpg';
-import foldingImage from '../assets/images/Folding Sliding Doors Hero Image.jpg';
-import slidingImage from '../assets/images/Sliding Doors Hero Image.jpg';
-import framesImage from '../assets/images/Door Frames Hero Image.jpg';
-import barnImage from '../assets/images/Barn Doors and Exposed Sliders Hero Image.png';
-import cavityImage from '../assets/images/Cavity Units Hero Image.jpg';
-import architravesImage from '../assets/images/Architraves and skirtings Hero Image.png';
+import doorsImage from '../assets/images/Doors Hero Image.webp';
+import windowsImage from '../assets/images/Windows Hero Image.webp';
+import foldingImage from '../assets/images/Folding Sliding Doors Hero Image.webp';
+import slidingImage from '../assets/images/Sliding Doors Hero Image.webp';
+import framesImage from '../assets/images/Door Frames Hero Image.webp';
+import barnImage from '../assets/images/Barn Doors and Exposed Sliders Hero Image.webp';
+import cavityImage from '../assets/images/Cavity Units Hero Image.webp';
+import architravesImage from '../assets/images/Architraves and skirtings Hero Image.webp';
 
 interface CategoryData {
     title: string;
@@ -156,11 +157,7 @@ export function ProductList() {
                     </ul>
                 </div>
 
-                <div className={styles.cta}>
-                    <h3>Interested in {data.title}?</h3>
-                    <p>Contact us for a free consultation and custom quotation tailored to your specific requirements.</p>
-                    <Link to="/contact" className={styles.button}>Request a Quote</Link>
-                </div>
+                <CTA />
             </div>
         </div>
     );

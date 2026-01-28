@@ -7,6 +7,7 @@ import { About } from './pages/About';
 import { Gallery } from './pages/Gallery';
 import { Contact } from './pages/Contact';
 import { ProductList } from './pages/ProductList';
+import { Products } from './pages/Products';
 import { Privacy, Terms, PAIA } from './pages/Legal';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/products" element={<Products />} />
             <Route path="/products/:category" element={<ProductList />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />

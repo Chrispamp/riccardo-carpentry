@@ -1,7 +1,7 @@
 import { Hero } from '../components/Hero';
 import styles from './About.module.css';
 import { MapPin, Award, Users } from 'lucide-react';
-import heroImage from '../assets/images/Home Hero Image.jpg';
+import heroImage from '../assets/images/Home Hero Image.webp';
 
 export function About() {
     return (

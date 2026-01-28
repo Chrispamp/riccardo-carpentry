@@ -2,14 +2,15 @@ import { useState } from 'react';
 import styles from './Gallery.module.css';
 
 // Import all hero images as gallery items
-import doorsImage from '../assets/images/Doors Hero Image.jpg';
-import windowsImage from '../assets/images/Windows Hero Image.jpg';
-import foldingImage from '../assets/images/Folding Sliding Doors Hero Image.jpg';
-import slidingImage from '../assets/images/Sliding Doors Hero Image.jpg';
-import barnImage from '../assets/images/Barn Doors and Exposed Sliders Hero Image.png';
-import cavityImage from '../assets/images/Cavity Units Hero Image.jpg';
-import framesImage from '../assets/images/Door Frames Hero Image.jpg';
-import architravesImage from '../assets/images/Architraves and skirtings Hero Image.png';
+// Import all hero images as gallery items
+import doorsImage from '../assets/images/Doors Hero Image.webp';
+import windowsImage from '../assets/images/Windows Hero Image.webp';
+import foldingImage from '../assets/images/Folding Sliding Doors Hero Image.webp';
+import slidingImage from '../assets/images/Sliding Doors Hero Image.webp';
+import barnImage from '../assets/images/Barn Doors and Exposed Sliders Hero Image.webp';
+import cavityImage from '../assets/images/Cavity Units Hero Image.webp';
+import framesImage from '../assets/images/Door Frames Hero Image.webp';
+import architravesImage from '../assets/images/Architraves and skirtings Hero Image.webp';
 
 const GALLERY_IMAGES = [
     { src: doorsImage, title: 'Solid Wooden Doors', category: 'Doors' },
