@@ -8,6 +8,7 @@ import { Gallery } from './pages/Gallery';
 import { Contact } from './pages/Contact';
 import { ProductList } from './pages/ProductList';
 import { Products } from './pages/Products';
+import { Testimonials } from './pages/Testimonials';
 import { Privacy, Terms, PAIA } from './pages/Legal';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:category" element={<ProductList />} />
+            <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/paia" element={<PAIA />} />

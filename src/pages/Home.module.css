@@ -222,6 +222,16 @@
     color: var(--color-lime);
 }
 
+.testimonials .linkButton {
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.testimonials .linkButton:hover {
+    background: var(--color-white);
+    color: var(--color-charcoal);
+}
+
 /* CTA Section */
 .cta {
     padding: var(--spacing-xl) var(--spacing-md);
@@ -263,6 +273,16 @@
     background: var(--color-primary-hover);
     transform: translateY(-2px);
     box-shadow: 0 5px 20px rgba(186, 218, 85, 0.3);
+}
+
+.testimonial p {
+    line-height: 1.6;
+}
+
+.viewMoreContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
 @media (max-width: 768px) {

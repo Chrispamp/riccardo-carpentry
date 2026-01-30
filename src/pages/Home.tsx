@@ -27,35 +27,7 @@ export function Home() {
                         unique designs, we approach each project with equal care. Our flexible manufacturing capabilities bring
                         specific design ideas to life efficiently, without compromising quality or extending timelines.
                     </p>
-                    <Link to="/gallery" className={styles.linkButton}>View Gallery <ArrowRight size={20} /></Link>
-                </div>
-            </section>
-
-            <section className={styles.serve}>
-                <div className={styles.serveContent}>
-                    <h2>Who We Serve</h2>
-                    <p className={styles.lead}>
-                        We're proud to work with clients across South Africa's major regions, including Johannesburg,
-                        Pretoria, Mpumalanga, KwaZulu-Natal, Limpopo, and the Western Cape.
-                    </p>
-                    <p>
-                        Our reputation for quality has also taken us beyond our borders, with successful projects
-                        delivered to Mozambique, Zimbabwe, Lesotho, and the Democratic Republic of Congo.
-                    </p>
-                    <div className={styles.serveIcons}>
-                        <div className={styles.iconItem}>
-                            <Users className={styles.icon} />
-                            <span>Architects & Designers</span>
-                        </div>
-                        <div className={styles.iconItem}>
-                            <Hammer className={styles.icon} />
-                            <span>Builders & Developers</span>
-                        </div>
-                        <div className={styles.iconItem}>
-                            <Globe className={styles.icon} />
-                            <span>International Clients</span>
-                        </div>
-                    </div>
+                    <Link to="/products" className={styles.linkButton}>View Products <ArrowRight size={20} /></Link>
                 </div>
             </section>
 
@@ -92,13 +64,33 @@ export function Home() {
                         <Link to="/products/architraves" className={styles.cardLink}>View Finishes <ArrowRight size={16} /></Link>
                     </div>
 
-                    <div className={styles.productCard}>
-                        <h3><Sparkles size={20} /> Beautiful Wooden Windows</h3>
-                        <p>
-                            Custom-manufactured to your exact specifications, our wooden windows combine traditional
-                            craftsmanship with modern functionality.
-                        </p>
-                        <Link to="/products/windows" className={styles.cardLink}>Explore Windows <ArrowRight size={16} /></Link>
+                </div>
+            </section>
+
+            <section className={styles.serve}>
+                <div className={styles.serveContent}>
+                    <h2>Who We Serve</h2>
+                    <p className={styles.lead}>
+                        We're proud to work with clients across South Africa's major regions, including Johannesburg,
+                        Pretoria, Mpumalanga, KwaZulu-Natal, Limpopo, and the Western Cape.
+                    </p>
+                    <p>
+                        Our reputation for quality has also taken us beyond our borders, with successful projects
+                        delivered to Mozambique, Zimbabwe, Lesotho, and the Democratic Republic of Congo.
+                    </p>
+                    <div className={styles.serveIcons}>
+                        <div className={styles.iconItem}>
+                            <Users className={styles.icon} />
+                            <span>Architects & Designers</span>
+                        </div>
+                        <div className={styles.iconItem}>
+                            <Hammer className={styles.icon} />
+                            <span>Builders & Developers</span>
+                        </div>
+                        <div className={styles.iconItem}>
+                            <Globe className={styles.icon} />
+                            <span>International Clients</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -131,6 +123,9 @@ export function Home() {
                             </p>
                             <p className={styles.author}>— Jessica Davis</p>
                         </div>
+                    </div>
+                    <div className={styles.viewMoreContainer}>
+                        <Link to="/testimonials" className={styles.linkButton}>View More Testimonials <ArrowRight size={20} /></Link>
                     </div>
                 </div>
             </section>

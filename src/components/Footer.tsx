@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 export function Footer() {
@@ -21,11 +22,11 @@ export function Footer() {
 
                     <div className={styles.links}>
                         <h4>Quick Links</h4>
-                        <a href="/products">Our Products</a>
-                        <a href="/gallery">Gallery</a>
-                        <a href="/privacy">Privacy Policy</a>
-                        <a href="/terms">Terms & Conditions</a>
-                        <a href="/paia">PAIA Manual</a>
+                        <Link to="/products">Our Products</Link>
+                        <Link to="/gallery">Gallery</Link>
+                        <Link to="/privacy">Privacy Policy</Link>
+                        <Link to="/terms">Terms & Conditions</Link>
+                        <Link to="/paia">PAIA Manual</Link>
                     </div>
                 </div>
 
