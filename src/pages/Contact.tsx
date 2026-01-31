@@ -41,6 +41,14 @@ export function Contact() {
                         <div>
                             <h3>Visit Us</h3>
                             <p>26 Third Avenue, Vorsterkroon<br />Nigel, Gauteng, South Africa</p>
+                            <a
+                                href="https://www.google.com/maps/search/?api=1&query=26+Third+Avenue,+Vorsterkroon,+Nigel,+Gauteng,+South+Africa"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.mapLink}
+                            >
+                                View on Google Maps
+                            </a>
                         </div>
                     </div>
 

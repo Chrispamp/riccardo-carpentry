@@ -1,28 +1,6 @@
 .container {
-    padding-top: 80px;
     min-height: 100vh;
     background-color: var(--color-white);
-}
-
-.hero {
-    background-color: var(--color-charcoal);
-    color: var(--color-white);
-    padding: 6rem 2rem;
-    text-align: center;
-}
-
-.hero h1 {
-    font-family: var(--font-serif);
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    margin-bottom: 1rem;
-    color: var(--color-white);
-}
-
-.hero p {
-    font-size: 1.25rem;
-    color: var(--color-cream);
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 .content {

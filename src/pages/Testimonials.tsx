@@ -1,4 +1,6 @@
 import styles from './Testimonials.module.css';
+import { Hero } from '../components/Hero';
+import heroImage from '../assets/images/Sliding Doors Hero Image.webp';
 
 const testimonials = [
     {
@@ -34,10 +36,11 @@ const testimonials = [
 export function Testimonials() {
     return (
         <div className={styles.container}>
-            <header className={styles.hero}>
-                <h1>What Our Clients Say</h1>
-                <p>Real stories from clients who chose quality and craftsmanship.</p>
-            </header>
+            <Hero
+                image={heroImage}
+                title="What Our Clients Say"
+                subtitle="Real stories from clients who chose quality and craftsmanship."
+            />
 
             <main className={styles.content}>
                 <div className={styles.grid}>

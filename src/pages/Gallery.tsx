@@ -33,10 +33,10 @@ export function Gallery() {
 
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
+            <header className={styles.header}>
                 <h1>Our Gallery</h1>
                 <p>Explore our portfolio of custom wooden doors, windows, and architectural joinery.</p>
-            </div>
+            </header>
 
             <div className={styles.filters}>
                 {categories.map(cat => (

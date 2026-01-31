@@ -15,7 +15,7 @@ export function Hero({ image, title, subtitle }: HeroProps) {
         offset: ["start start", "end start"]
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+    const y = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]);
     const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
     return (

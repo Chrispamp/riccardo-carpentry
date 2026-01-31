@@ -84,6 +84,19 @@
     color: var(--color-lime);
 }
 
+.mapLink {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--color-lime) !important;
+}
+
+.mapLink:hover {
+    color: var(--color-black) !important;
+}
+
 .callButton {
     display: inline-flex;
     align-items: center;

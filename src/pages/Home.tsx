@@ -22,10 +22,10 @@ export function Home() {
                         As a family business, we're directly involved from initial vision to final delivery, ensuring exceptional
                         results that reflect our values.
                     </p>
-                    <p>
-                        Our strength lies in adaptability and precision. Whether selecting from our extensive range or requiring
+                    <p className={styles.strengthText}>
+                        Our strength lies in adaptability and precision. Whether selecting from our extensive range of doors or requiring
                         unique designs, we approach each project with equal care. Our flexible manufacturing capabilities bring
-                        specific design ideas to life efficiently, without compromising quality or extending timelines.
+                        specific design ideas to life efficiently, without compromising quality or extending timelines
                     </p>
                     <Link to="/products" className={styles.linkButton}>View Products <ArrowRight size={20} /></Link>
                 </div>
@@ -34,7 +34,7 @@ export function Home() {
             <section className={styles.products}>
                 <h2>What We Create</h2>
                 <p className={styles.productsIntro}>
-                    We take pride in crafting a comprehensive range of premium wooden products designed to enhance any space:
+                    We take pride in crafting a comprehensive range of premium wooden doors designed to enhance any space:
                 </p>
                 <div className={styles.grid}>
                     <div className={styles.productCard}>
@@ -74,7 +74,7 @@ export function Home() {
                         We're proud to work with clients across South Africa's major regions, including Johannesburg,
                         Pretoria, Mpumalanga, KwaZulu-Natal, Limpopo, and the Western Cape.
                     </p>
-                    <p>
+                    <p className={styles.lead}>
                         Our reputation for quality has also taken us beyond our borders, with successful projects
                         delivered to Mozambique, Zimbabwe, Lesotho, and the Democratic Republic of Congo.
                     </p>
